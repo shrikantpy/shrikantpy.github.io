@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shrikant Yalakki · Portfolio</title>
+  <meta name="description" content="Portfolio of Shrikant Yalakki — GenAI, Data Science, and Oracle Apps DBA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b0d10; --panel:#0f1318; --text:#e8eef6; --muted:#9fb0c3; --accent:#7dd3fc; --chip:#1a212a; --border:#1c2430;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1024px;margin:0 auto;padding:28px 20px 64px}
+    header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:16px 0 8px;border-bottom:1px solid var(--border)}
+    .id{display:flex;gap:14px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:14px;background:linear-gradient(145deg,#1b2430,#0f1318);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .name{font-size:1.5rem;font-weight:700}
+    .tagline{color:var(--muted);font-size:.95rem;margin-top:2px}
+    nav{display:flex;gap:12px;flex-wrap:wrap}
+    nav a{padding:8px 12px;background:var(--chip);border:1px solid var(--border);border-radius:999px}
+
+    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;margin-top:20px}
+    @media (max-width:920px){.grid{grid-template-columns:1fr}}
+
+    section{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:18px}
+    h2{margin:0 0 12px;font-size:1.15rem}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--chip);border:1px solid var(--border);margin:4px 6px 0 0;font-size:.9rem}
+    .list{display:grid;gap:12px}
+    .card{padding:14px;border:1px solid var(--border);border-radius:14px;background:#0d1116}
+    .card h3{margin:0 0 6px;font-size:1.05rem}
+    .meta{color:var(--muted);font-size:.9rem}
+    .impact{margin-top:8px}
+
+    footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.95rem}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:10px}
+    .kpi{background:var(--chip);border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center}
+    .kpi b{font-size:1.15rem;display:block}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="id">
+        <div class="avatar" aria-hidden="true">SK</div>
+        <div>
+          <div class="name">Shrikant Yalakki</div>
+          <div class="tagline">GenAI • Data Science • Oracle Apps DBA (20+ yrs)</div>
+        </div>
+      </div>
+      <nav>
+        <!-- Replace href values with your real URLs -->
+        <a href="https://www.linkedin.com/in/shrikantyalakki" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/shrikantpy" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:shrikantpy@gmail.com">Email</a>
+        <a href="#resume">Resume</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <!-- Left column -->
+      <section>
+        <h2>About</h2>
+        <p>Seasoned Oracle Apps DBA turned Data/GenAI professional. I build reliable data systems, performant analytics, and pragmatic AI assistants. I value agility, integrity, ownership, safety, and teamwork.</p>
+        <div class="kpis">
+          <div class="kpi"><b>21+ yrs</b>Experience</div>
+          <div class="kpi"><b>50+ </b>Dashboards migrated</div>
+          <div class="kpi"><b>40% </b>Perf gains (EBS)</div>
+          <div class="kpi"><b>0.85 </b>AUC (Credit Risk)</div>
+        </div>
+      </section>
+
+      <!-- Right column -->
+      <section>
+        <h2>Skills</h2>
+        <div>
+          <span class="pill">Python</span>
+          <span class="pill">SQL</span>
+          <span class="pill">Pandas</span>
+          <span class="pill">Scikit-learn</span>
+          <span class="pill">LangChain</span>
+          <span class="pill">LLM APIs</span>
+          <span class="pill">Power BI</span>
+          <span class="pill">Tableau</span>
+          <span class="pill">Oracle EBS R12.2</span>
+          <span class="pill">Oracle OEM</span>
+          <span class="pill">OBIEE → Power BI</span>
+          <span class="pill">Linux/Shell</span>
+          <span class="pill">Azure AI</span>
+          <span class="pill">Git/GitHub</span>
+        </div>
+      </section>
+    </div>
+
+    <section>
+      <h2>Highlighted Projects</h2>
+      <div class="list">
+        <article class="card">
+          <h3>OBIEE → Power BI Migration</h3>
+          <div class="meta">Power BI, Oracle, DAX, SQL • 2025</div>
+          <p>Migrated 50+ OBIEE dashboards to Power BI with data model redesign and incremental refresh pipelines.</p>
+          <p class="impact"><strong>Impact:</strong> 30% faster loads, governance-ready datasets, reduced maintenance.</p>
+        </article>
+        <article class="card">
+          <h3>Credit Risk Model (Kaggle: Home Credit Default)</h3>
+          <div class="meta">Python, scikit-learn, feature engineering, imbalanced data</div>
+          <p>Built a pipeline with KNN imputation, target encoding, and model stacking for default prediction.</p>
+          <p class="impact"><strong>Impact:</strong> AUC-ROC 0.85; explainability via SHAP for risk drivers.</p>
+        </article>
+        <article class="card">
+          <h3>Oracle EBS Performance Tuning</h3>
+          <div class="meta">EBS R12.2, SQL tuning, AWR, Concurrent Manager</div>
+          <p>Optimized key concurrent programs, refined index strategy, and stabilized ICM sessions.</p>
+          <p class="impact"><strong>Impact:</strong> 40% runtime reduction and improved reliability.</p>
+        </article>
+        <article class="card">
+          <h3>GenAI Resume/Job Match Assistant</h3>
+          <div class="meta">LangChain, LLM APIs, Retrieval</div>
+          <p>LLM app that scores resume-to-JD fit and drafts targeted bullets.</p>
+          <p class="impact"><strong>Impact:</strong> Cut tailoring time by 70% with consistent quality.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Education & Certifications</h2>
+      <ul>
+        <li>MBA — PES University</li>
+        <li>EPGP — IIIT Bangalore</li>
+        <li>Microsoft Power BI Data Analyst (in progress)</li>
+        <li>Oracle certifications</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        <!-- Replace with your real LinkedIn and email -->
+        Connect on <a href="https://www.linkedin.com/in/shrikantyalakki" target="_blank" rel="noopener">LinkedIn</a> or email <a href="mailto:shrikantpy@egmail.com">shrikantpy@gmail.com</a>.
+      </p>
+      <p style="color:var(--muted)">Tip: Update the four links in the top-right nav and the two links above.</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Shrikant Yalakki · Built with 💙 on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
